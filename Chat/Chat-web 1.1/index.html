@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Chat-web</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+        <script defer src="script.js"></script> 
+        <style>
+            
+            body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            }
+            h1{
+            text-align: center;
+            font-weight: 800;
+            color: rgb(255, 255, 255);
+            }
+            input{
+            border: 1px solid #000;
+            padding-left: 5px;
+            border-radius: 5px;
+            height: 40px;
+            width: 70%;
+            float: left;
+            flex-grow: 1;
+            }
+            button{
+            float: right;
+            }
+            #chat-container{
+            border: 2px solid #000000;
+            background-color: rgb(0, 0, 0);
+            border-radius: 5px;
+            margin-top: 80px;
+            width: 60%;
+            position: relative;
+            height: 450px;
+            }
+            #conteinermsg{
+            border: 2px solid rgb(33, 198, 240);
+            overflow-y: auto;
+            overflow-x: hidden;
+            position: relative;
+            background-color: rgb(67, 156, 185);
+            width: auto;
+            height: 330px;
+            padding: 10px;
+            word-wrap: break-word;
+            }
+
+            #mensagem-conteiner {
+            width: 100%;
+            max-width: 1200px;
+            border-radius: 8px;
+            
+            }
+
+            #mensagem-conteiner div {
+            background-color: rgb(230, 225, 225);
+            padding: 5px;
+            border-radius: 8px;
+            }
+
+            #mensagem-conteiner div:nth-child(2n) {
+            background-color: #FFF;
+            border-radius: 5px;
+            }
+
+            .mandar-container {
+            position: relative;
+            width: 100%;
+            display: flex;
+            margin-top: 10px;
+            }
+            #info{
+                margin-top: 50px;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        
+        <div id="chat-container" class="container-xl">   
+            <header>
+                <h1>Chat-web</h1>
+                <!-- O elemento HTML <header> representa um grupo de suporte introdutório ou navegacional.-->
+            </header>
+            <main id="conteinermsg" class="col">
+                <div id="mensagem-conteiner">
+                </div>
+            </main>
+            <form id="mandar-container" class="mandar-container">
+                    <input type="text" id="mensagem-input"placeholder="Digite sua mensagem...">
+                    <button type="submit" id="mandar-botao" class="btn btn-info" > Enviar</button>
+            </form>
+            <div id="info">//Ligar server cmd:<br />
+                //npm i --save-dev nodemon
+                //npm run devStart</div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <title>Chat on-line</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+            <link rel="stylesheet" type="text/css" href="style.css" />
+
+            <script src="script.js"></script>
+
+        </head>    
+        <body>
+            <div id="chat-container" class="container-xl">   
+                <header>
+                    <h1>Atendimento on-line</h1>
+                    <!-- O elemento HTML <header> representa um grupo de suporte introdutório ou navegacional.-->
+                </header>
+                <main id="conteinermsg" class="col">
+                      <div class="message-item message-atendente-esq">
+                        <div class="author"><b>Atendente diz:</b></div>
+                        <div class="message-text">
+                          <p class="mensagemtextoEsq">Blabla blabla blablabla</p>
+                        </div>
+                      </div>
+                      <div class="message-item message-atendente-esq">
+                        <div class="author"><b>Atendente diz:</b></div>
+                        <div class="message-text"><p class="mensagemtextoEsq">Blabla blabla blablabla</p></div>
+                      </div>
+                      <div class="message-item message-usuario-dir">
+                        <div class="author"><b>Você diz:</b></div>
+                        <div class="message-text">
+                          <p class="mensagemtextoDir">Blabla blabla blablabla</p>
+                        </div>
+                      </div> 
+                      <div class="message-item message-usuario-dir">
+                        <div class="author"><b>Você diz:</b></div>
+                        <div class="message-text">
+                          <p class="mensagemtextoDir">Blabla blabla blablabla</p>
+                        </div>
+                      </div>
+                      <div class="message-item message-atendente-esq">
+                        <div class="author"><b>Atendente diz:</b></div>
+                        <div class="message-text"><p class="mensagemtextoEsq">Blabla blabla blablabla</p></div>
+                      </div>
+                    <!-- O elemento <main> define o conteúdo principal dentro do <body> em seu documento ou aplicação. -->
+                     
+
+                </main>
+                <footer >
+                    <form id="formcontrol" class="form">
+                            <input type="text" nome="msg" id="msg"  placeholder="Digite sua mensagem...">
+                            <button type="submit" id="botaomsg" class="btn btn-info" >Enviar</button>
+                    </form>
+                </footer>
+            </div>
+
+        </body>
+    </html>    
